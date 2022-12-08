@@ -59,9 +59,10 @@ var viewRequest = () => {
                 $('#request').fadeOut(100)
                 $('#printCard').fadeIn()
                 $('#idcard').append(display).fadeIn('slow')
+            } else {
+                alert('Credentials not found')
+                window.location.href = './idcard.html'
             }
-            alert('Credentials not found')
-            window.location.href = './idcard.html'
         }
     })
 }
